@@ -13,4 +13,4 @@ class Persona():
     def mayor_de_edad(self):#no hace falta pasar edad porque ya lo has tomado en el constructor
         return self.edad >=18 #no hace falta poner if porque al hacer esa comparacion 
         #ya devuelve directamente true si se cumple o false si no se cumple
-        return self.edad >= 18
+        

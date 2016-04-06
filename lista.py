@@ -42,5 +42,6 @@ while True:
             print("Los mayores de edad son: ")
             mostrar_adultos(bbdd)
             sys.exit()
+        print("no puedes poner un numero negativo")
     except Exception:
         print("valor incorrecto")

@@ -7,4 +7,4 @@ class Alumno(Persona):
         self.asignatura = asignatura
 
     def __str__(self):
-        return super().__str__()+"Asignatura: "+self.asignatura
+        return super().__str__()+" Asignatura: "+self.asignatura
