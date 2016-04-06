@@ -32,14 +32,15 @@ bbdd = [Alumno('Miriam','Maillo',29,'mates'),
         Alumno('Maria', 'Alvarez', 17,'mates')
        ]
 
-try:
-    numero = int(input("Introduce el numero de los alumnos que va a añadir: "))
-except Exception:
-    print("valor incorrecto")
-    sys.exit()
-
-bbdd = agregar(numero, bbdd)
-#mostrar(bbdd)
-print("Los mayores de edad son: ")
-mostrar_adultos(bbdd)
-    
+while True:
+    numero = input("Introduce el numero de alumnos que va a anadir: ")
+    try:
+        numero = int(numero)
+        if numero >= 0:
+            bbdd = agregar(numero,bbdd)
+            mostrar(bbdd)
+            print("Los mayores de edad son: ")
+            mostrar_adultos(bbdd)
+            sys.exit()
+    except Exception:
+        print("valor incorrecto")
